@@ -23,6 +23,8 @@ export const CounterApp = () => {
         //que no esten definidas en este nuevo objeto se van a perder
         //operador spread, extrae todas las propiedades,luego podemos "pisar"y redifiniar el state q queremos asignar manualmente
         onClick={() => {
+       //pisamos las variables del operador state y re declaramos las variables q queremos q sean afectadas
+       
           setState({ ...state, counter1: counter1 + 1 });
         }}
       >

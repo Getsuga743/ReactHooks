@@ -2,12 +2,15 @@
 import { useState } from "react";
 
 export const UseCounter = (initialState = 10) => {
-  const [state, setState] = useState(initialState);
+  const [formState, setFormState] = useState(initialState);
   const increment = () => {
-    setState(state + 1);
+    setState(formstate + 1);
   };
   const decrement = () => {
     setState(state - 1);
   };
-  return [state, increment, decrement];
+  const reset = () => {
+    setState(initialState)
+  }
+  return [state, increment, decrement, reset];
 };
