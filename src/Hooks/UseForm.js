@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
-export const UseForm = (initialState = {}) => {
+export default (initialState = {}) => {
   const [values, setValues] = useState(initialState);
   const handleInputChange = ({ target }) => {
     setValues({
@@ -10,4 +10,4 @@ export const UseForm = (initialState = {}) => {
   };
   return [values, handleInputChange];
 };
-//tenemos dos opciones, declarar la funcion en el cuerpo del hook, o delcararla en el return
+// tenemos dos opciones, declarar la funcion en el cuerpo del hook, o delcararla en el return

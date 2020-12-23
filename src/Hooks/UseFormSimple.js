@@ -1,7 +1,6 @@
-import {useState} from 'react'
+import { useState } from 'react';
 
-
-export const UseFormSimple = (initialState = {}) => {
+export default (initialState = {}) => {
   const [values, setValues] = useState(initialState);
   const handleInputChange = ({ target }) => {
     setValues({
