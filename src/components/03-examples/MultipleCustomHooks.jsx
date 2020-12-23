@@ -1,6 +1,7 @@
+/* eslint-disable no-console */
 import React from 'react';
-import { UseFetch } from '../../Hooks/UseFetch';
-import { UseCounter } from '../../Hooks/UseCounter';
+import UseFetch from '../../Hooks/UseFetch';
+import UseCounter from '../../Hooks/UseCounter';
 
 export default () => {
   const [countState, increment] = UseCounter(1);

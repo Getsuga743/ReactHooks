@@ -1,0 +1,5 @@
+.border-blockquote {
+  display: flex !important;
+  border:1px solid red !important;
+  width:fit-content;
+}

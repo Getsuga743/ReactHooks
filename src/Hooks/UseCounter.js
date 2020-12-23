@@ -1,7 +1,7 @@
-//Use para indicar q es un hook, un custom hook es una funcion comun
-import { useState } from "react";
+// Use para indicar q es un hook, un custom hook es una funcion comun
+import { useState } from 'react';
 
-export const UseCounter = (initialState = 10) => {
+export default (initialState = 10) => {
   const [countState, setFormState] = useState(initialState);
   const increment = () => {
     setFormState(countState + 1);
@@ -10,7 +10,7 @@ export const UseCounter = (initialState = 10) => {
     setFormState(countState - 1);
   };
   const reset = () => {
-    setFormState(initialState)
-  }
+    setFormState(initialState);
+  };
   return [countState, increment, decrement, reset];
 };

@@ -3,7 +3,11 @@ import React from 'react';
 
 export default ({ Handle }) => (
   <div>
-    <form action="_blank" id="FormCheck" className="d-flex flex-column justify-text">
+    <form
+      action="_blank"
+      id="FormCheck"
+      className="d-flex flex-column justify-text"
+    >
       <label className="mb-2" htmlFor="CounterApp">
         {' '}
         <input
@@ -59,6 +63,39 @@ export default ({ Handle }) => (
           value="5"
         />
         Examples-MultiplesCustomHooks
+      </label>
+      <label htmlFor="FormCheck" className="mb-2">
+        {' '}
+        <input
+          className="btn btn-outline-primary mr-2"
+          name="Examples-MultiplesCustomHooks"
+          onClick={Handle}
+          type="button"
+          value="6"
+        />
+        FocusScreen
+      </label>
+      <label htmlFor="FormCheck" className="mb-2">
+        {' '}
+        <input
+          className="btn btn-outline-primary mr-2"
+          name="RealExampleRef"
+          onClick={Handle}
+          type="button"
+          value="7"
+        />
+        RealExampleRef
+      </label>
+      <label htmlFor="FormCheck" className="mb-2">
+        {' '}
+        <input
+          className="btn btn-outline-primary mr-2"
+          name="RealExampleRef"
+          onClick={Handle}
+          type="button"
+          value="8"
+        />
+        LayoutEffect
       </label>
     </form>
   </div>
