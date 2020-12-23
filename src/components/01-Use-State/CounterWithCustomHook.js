@@ -24,7 +24,7 @@ export const CounterWithCustomHook = () => {
       >
         -1
       </button>
-      <button onClick={() => {
+      <button className="btn btn-secondary m-2" onClick={() => {
         reset()
       }}>Reset</button>
     </>
