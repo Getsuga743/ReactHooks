@@ -97,6 +97,50 @@ export default ({ Handle }) => (
         />
         LayoutEffect
       </label>
+      <label htmlFor="FormCheck" className="mb-2">
+        {' '}
+        <input
+          className="btn btn-outline-primary mr-2"
+          name="RealExampleRef"
+          onClick={Handle}
+          type="button"
+          value="9"
+        />
+        Memorize
+      </label>
+      <label htmlFor="FormCheck" className="mb-2">
+        {' '}
+        <input
+          className="btn btn-outline-primary mr-2"
+          name="RealExampleRef"
+          onClick={Handle}
+          type="button"
+          value="10"
+        />
+        UseMemo
+      </label>
+      <label htmlFor="FormCheck" className="mb-2">
+        {' '}
+        <input
+          className="btn btn-outline-primary mr-2"
+          name="RealExampleRef"
+          onClick={Handle}
+          type="button"
+          value="11"
+        />
+        CallbackHook
+      </label>
+      <label htmlFor="FormCheck" className="mb-2">
+        {' '}
+        <input
+          className="btn btn-outline-primary mr-2"
+          name="RealExampleRef"
+          onClick={Handle}
+          type="button"
+          value="12"
+        />
+        Memorize HomeWork
+      </label>
     </form>
   </div>
 );

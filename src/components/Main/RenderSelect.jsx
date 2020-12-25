@@ -7,27 +7,30 @@ import SimpleForm from '../02-useEffect/SimpleForm';
 import FocusScreen from '../04-Use-Ref/FocusScreen';
 import RealExampleRef from '../04-Use-Ref/RealExampleRef';
 import LayoutEffect from '../05-UseLayoutEffect/LayoutEffect';
+import Memorize from '../06-Memo/Memorize';
+import MemoHook from '../06-Memo/MemoHook';
+import CallbackHook from '../06-Memo/CallbackHook';
+import Padre from '../07-tarea-memo/Padre';
 
 export default (props) => {
-  const state = Object.values(props.children)[0] || '';
-  switch (state) {
-    case '1':
-      return <CounterApp />;
-    case '2':
-      return <CounterWithCustomHook />;
-    case '3':
-      return <SimpleForm />;
-    case '4':
-      return <FormWithCustomForm />;
-    case '5':
-      return <MultipleCustomHooks />;
-    case '6':
-      return <FocusScreen />;
-    case '7':
-      return <RealExampleRef />;
-    case '8':
-      return <LayoutEffect />;
-    default:
-      return '';
+  const state = Object.values(props.children)[0];
+  console.log(state - 1);
+  if (state) {
+    const components = [
+      <CounterApp />,
+      <CounterWithCustomHook />,
+      <SimpleForm />,
+      <FormWithCustomForm />,
+      <MultipleCustomHooks />,
+      <FocusScreen />,
+      <RealExampleRef />,
+      <LayoutEffect />,
+      <Memorize />,
+      <MemoHook />,
+      <CallbackHook />,
+      <Padre />,
+    ];
+    return components[state - 1];
   }
+  return '';
 };

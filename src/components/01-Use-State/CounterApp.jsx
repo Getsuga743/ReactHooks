@@ -16,11 +16,11 @@ export default () => {
     <>
       <h1>
         Counter1
-        {counter1}
+        {` ${counter1}`}
       </h1>
       <h1>
         Counter2
-        {counter2}
+        {` ${counter2}`}
       </h1>
       <hr />
       <button
