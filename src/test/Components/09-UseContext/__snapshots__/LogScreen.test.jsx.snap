@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en <LoginPage /> debe de mostrarse correctamente 1`] = `
+Array [
+  "// eslint-disable-next-line react/jsx-no-undef",
+  <div
+    className="container-fluid"
+  >
+    <h1>
+      LoginPage
+    </h1>
+    <button
+      className="btn btn-primary"
+      onClick={[Function]}
+      type="button"
+    >
+      Login
+    </button>
+  </div>,
+]
+`;
